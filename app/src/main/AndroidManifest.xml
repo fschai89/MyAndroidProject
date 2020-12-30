@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAndroidProject">
-        <activity android:name=".activity.MainActivity">
+        <activity
+            android:name=".activity.ContactActivity"
+            android:label=""></activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="Contacts">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

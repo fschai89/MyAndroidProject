@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activity.ContactActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingVertical="20dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/circle_shape" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/textViewHeader"
+                android:text="Main Information" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textViewRowCol1"
+
+                    android:text="First Name" />
+
+                <EditText
+                    android:id="@+id/etFirstName"
+                    style="@style/editTextRowCol2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="#c0c0c0" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textViewRowCol1"
+                    android:text="Last Name" />
+
+                <EditText
+                    android:id="@+id/etLastName"
+                    style="@style/editTextRowCol2" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/textViewHeader"
+                android:text="Sub Information" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textViewRowCol1"
+                    android:text="Email" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    style="@style/editTextRowCol2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="#c0c0c0" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textViewRowCol1"
+                    android:text="Phone" />
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    style="@style/editTextRowCol2" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etId"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
